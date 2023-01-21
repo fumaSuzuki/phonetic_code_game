@@ -1,0 +1,48 @@
+@charset "UTF-8";
+html {/* html全体の設定をする。 */
+    font-size: 62.5%;/* フォントサイズを指定。 */
+    font-family: 'Noto Serif JP', serif;/* フォントの種類を指定。 */
+    background-color: #E6E5A3;/* 背景色を指定。 */
+}
+
+body {
+    font-size: 16px;/* フォントサイズをピクセルで指定。 */
+    font-size: 1.6rem;/* フォントサイズをremで指定。 */
+    margin: 0 15% 10rem 15%;/* 余白を上に0,右に15%,下に10rem,左に15%とる。 */
+    
+}
+
+h1{
+    font-family:'DotGothic16', sans-serif;/* google fontで取得したフォントを使用。 */
+}
+
+.chart{
+    width: 90%;
+    background-color: whitesmoke;
+    border: solid 1px lightgray;
+    border-collapse: collapse;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: left;
+    font-family: sans-serif ;
+    margin: 0.1rem;
+}
+
+th{
+    background-color: gray;
+    padding: 0.5rem;
+    color: #fff;
+    font-weight: 200 ;
+    text-align: center;
+}
+
+td{
+    padding: 0.5rem;
+    text-align: center;
+
+}
+
+.right_border{
+    border-right: solid 1px black;
+}
+    

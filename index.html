@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>フォネティックコード記憶ゲーム</title><!-- ページタイトル -->
+    <link rel="stylesheet" href="css/style.css"><!-- cssファイルの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!-- google fontを読み込む。 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>フォネティックコード記憶ゲーム</h1><!-- 見出し -->
+    <h3>■フォネティックコードとは</h3><!-- 小見出し -->
+    <p>フォネティックコードとは、無線通話などにおいて重要な文字・数字の組み合わせを正確に伝達するため定められたラテン文字の通話規則である。主に航空機の通信において使われる。各アルファベットと読み方は以下の表のようになっている。
+    </p>
+    <table class="chart" border="1"><!-- 表を作成。クラス名をchartにする。枠線の太さは1に設定。 -->
+        <tr>
+            <th>文字</th>
+            <th class="right_border">読み方</th>
+            <th>文字</th>
+            <th>読み方</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td class="right_border">アルファ</td>
+            <td>N</td>
+            <td>ノヴェンバー</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td class="right_border">ブラヴォー</td>
+            <td>O</td>
+            <td>オスカー</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td class="right_border">チャーリー</td>
+            <td>P</td>
+            <td>パパ</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td class="right_border">デルタ</td>
+            <td>Q</td>
+            <td>ケベック</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td class="right_border">エコー</td>
+            <td>R</td>
+            <td>ロメオ</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td class="right_border">フォックストロット</td>
+            <td>S</td>
+            <td>シエラ</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td class="right_border">ゴルフ</td>
+            <td>T</td>
+            <td>タンゴ</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td class="right_border">ホテル</td>
+            <td>U</td>
+            <td>ユニフォーム</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td class="right_border">インディア</td>
+            <td>V</td>
+            <td>ヴィクター</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td class="right_border">ジュリエット</td>
+            <td>W</td>
+            <td>ウィスキー</td>
+        </tr>
+        <tr>
+            <td>K</td>
+            <td class="right_border">キロ</td>
+            <td>X</td>
+            <td>エックスレイ</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td class="right_border">リマ</td>
+            <td>Y</td>
+            <td>ヤンキー</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td class="right_border">マイク</td>
+            <td>Z</td>
+            <td>ズル</td>
+        </tr>
+    </table>
+
+    <h3>■ゲームのやり方</h3><!-- 小見出し -->
+    <p>1以上10以下の任意の文字数を下のボックスに入力し、スタートボタンを押すと、入力した文字数分のアルファベットが表示されます。<br>表示が終わると入力ボックスが出てくるので、表示された順番にカタカナでフォネティックコードを入力してください。カタカナは上の表を参照してください。
+    </p>
+    <form action="#" id="form">
+        <!-- フォームタグを使い、入力欄と送信ボタンを囲む。送信先は未指定。id名はform。 -->
+        <input type="number" name="moji" min="1" max="10">文字で
+        <!-- inputタグをnumber属性にし、nameを"moji"と定義。最小値を1、最大値を10に指定。1以上10以下の数字しか入らないように設定する。 -->
+        <input type="submit" value="スタート！"><!-- inputタグをsubmit属性にし、valueの値を"スタート!"と設定。 -->
+    </form>
+    <script type="text/javascript" src="main.js"></script><!-- formタグの後に、formタグの値を取り出して処理をするプログラムを呼び出す。 -->
+</body>
+
+</html>
